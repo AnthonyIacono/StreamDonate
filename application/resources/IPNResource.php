@@ -8,16 +8,6 @@ class IPNResource extends AppResource {
             ));
         }
 
-        if($this->request->getData('secret') == '1M1ll10nD0llar$') {
-            $donation_id = $this->request->getData('custom');
-
-            $donationModel = ViewQueryFactory::$singleton->getDonationModelById($donation_id);
-
-            DonationProcessingService::$singleton->process($donationModel, $_POST);
-
-            return new Response();
-        }
-
         $req = 'cmd=_notify-validate';
 
         foreach ($_POST as $key => $value) {
