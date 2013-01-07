@@ -1,0 +1,127 @@
+.overlay {
+    display: none;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+html, body, p {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    font-size: 12px;
+}
+
+div.overlay {
+    width: 600px;
+    background: white;
+    border: 1px solid transparent;
+    border-radius: 5px;
+    padding: 7px;
+}
+
+a {
+    text-decoration: none;
+}
+a:visited {
+    text-decoration: none;
+}
+a:hover {
+    text-decoration: none;
+}
+
+#header {
+    height: 80px;
+}
+
+#header div.logo {
+    font-weight: bold;
+    font-size: 22pt;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+#secondary_navigation {
+    position: absolute;
+    right: 0;
+    top: 10px;
+}
+
+#secondary_navigation a img {
+    position: absolute;
+    left: 4px;
+    top: -4px;
+}
+
+#secondary_navigation a {
+    text-decoration: none;
+}
+
+div.layout {
+    width: 800px;
+    margin: 0 auto;
+    position: relative;
+}
+
+#current_user_header {
+    position: absolute;
+    top: 40px;
+    right: 0;
+    font-size: 8pt;
+}
+
+#footer {
+    padding: 7px;
+    text-align: center;
+    font-size: 8pt;
+}
+
+.contentBoxDivider {
+    height: 1px;
+    font-size: 0;
+    display: block;
+    margin: 7px 0;
+}
+
+.contentBoxBody {
+    padding: 7px;
+    border-radius: 0 0 2px 2px;
+}
+
+.contentBoxHeader {
+    padding: 7px;
+    font-size: 13px;
+    text-align: left;
+    border-radius: 6px 6px 0 0;
+    border: 0;
+}
+
+#mainLayout {
+    padding: 20px;
+}
+
+table {
+    margin: 0;
+    padding: 0;
+}
+
+table, td, th, tr {
+    border-collapse: collapse;
+    border: 0;
+}
+
+table {
+    width: 100%;
+}
+
+.contentBox {
+    margin-bottom: 12px;
+}
+
+div.passwordbox, div.selectbox-simple {
+    display: inline-block;
+}
