@@ -66,13 +66,6 @@ HTML
         return null;
     }
 
-    public function send_email($to, $subject, $message, $from = 'info@bakerburtonlundy.com') {
-        $headers = "From: $from\r\n";
-        $headers .= "Content-type: text/html\r\n";
-
-        mail($to, $subject, $message, $headers);
-    }
-
     public function message_box($title, $message, $buttons = array(), $after = null) {
         if(empty($buttons)) {
             $buttons = array('ok' => array(
